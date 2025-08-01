@@ -1,46 +1,38 @@
-# tesla-gru-price-prediction
-Tesla stock price prediction using GRU
+# Tesla Stock Price Prediction using GRU
 
-1-) This project uses historical stock data of Tesla (TSLA) to predict future prices using an GRU (Gated Recurrent Unit) deep learning model
+## 📌 Project Overview
 
-2-) About the Project
-Dataset: TSLA.csv
+This project utilizes a Gated Recurrent Unit (GRU)-based deep learning model to forecast Tesla Inc. stock prices based on historical time-series data. GRU is selected due to its efficiency and performance advantages over traditional RNNs when working with sequential data.
 
-3-) Goal: Predict future stock prices by learning temporal patterns in the data
+## 🧰 Technologies Used
 
-Model Used: Gated Recurrent Unit (GRU)
+- Python
+- TensorFlow / Keras
+- NumPy, Pandas
+- Matplotlib
+- Scikit-learn
 
-4-) Libraries Used
--pandas
--numpy
--matplotlib
--scikit-learn
--tensorflow / keras
+## 🗂️ Dataset
 
-5-) How to Run
+- Source: [Tesla stock historical data](https://www.kaggle.com/code/serkanp/tesla-stock-price-prediction)
+- Features: `Open`, `High`, `Low`, `Close`, `Volume`
+- Train-Test Split: 70% training, 30% testing
 
-  1-) Clone the repository:
+## 🧠 Model Architecture
 
-  git clone https://github.com/yourusername/tesla-gru-stock-prediction.git
-  cd tesla-gru-stock-prediction
+- GRU-based recurrent model with several dense layers
+- Applied hyperparameter tuning (epochs, learning rate, batch size)
+- Used dropout layers to reduce overfitting
+- Evaluation metrics: Loss (MSE), Accuracy (if applicable)
 
-  2-) Install the required libraries:
+## 📊 Results
 
+- Plots include loss graph and predicted vs actual closing prices
 
-  pip install -r requirements.txt
-  3-) Open and run gru_model.ipynb in Jupyter Notebook.
+## 🚀 How to Run
+pip install -r requirements.txt
+python gru_model.py
 
-6-)Notes
-The dataset was normalized before training and inverse-transformed after prediction.
-
-The model is trained on historical closing prices only.
-
-Time-based train/test split was applied to preserve the sequence of the data.
-
-7-)Author
-Can Çorapçıoğlu — Final year Computer Engineering student at Atılım University
-E-Mail: cancorapcioglu1@gmail.com
-
-LinkedIn: [LinkedIn](https://www.linkedin.com/in/can-%C3%A7orap%C3%A7%C4%B1o%C4%9Flu-15a340247/)
-
-This model is based on features in the TSLA.csv dataset, with labels for open values and close values used for 70% training and 30% validation. After training, the model predicts prices for the next three months.
+## ✍️ Author
+Can Çorapçıoğlu
+[GitHub](https://github.com/cancrpcoglu) | [LinkedIn](https://www.linkedin.com/in/can-%C3%A7orap%C3%A7%C4%B1o%C4%9Flu-15a340247/)
