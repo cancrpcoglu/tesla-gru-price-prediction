@@ -31,6 +31,7 @@ This project utilizes a Gated Recurrent Unit (GRU)-based deep learning model to 
 
 ## 🚀 How to Run
 pip install -r requirements.txt
+
 python gru_model.py
 
 ## ✍️ Author
